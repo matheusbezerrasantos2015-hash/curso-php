@@ -6,6 +6,8 @@
     $liga = true; // boolean
 
     print $nomeDaVariavel;
+    print "\n";
+    echo "<br />";
     echo $numero;
 
 
