@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora FATEC</h1>
+
+    <div class="calculadora">
+
+        <form action="./calcular.php" method="post">
+
+            <div class="input-control">
+                <label for="numero1"></label>
+                <input type="text" name="numero1" id=" numero" />
+            </div>
+
+            <div class="input-control">
+                <label for="numero2"></label>
+                <input type="text" name="numero2" id=" numero2" />
+            </div>
+
+            <div class="input-control">
+                <label for="operacao">Operacao</label>
+                <select name="operacao">
+                    
+                    <option value="soma">Soma</option>
+                    <option value="sub">Subtração</option>
+                    <option value="mult">Multiplicação</option>
+                    <option value="div">Divisão</option>
+                </select>
+            </div>
+
+            <div class="btn">
+                <button type="reset">Limpar</button>
+                <button type="submit">Calcular</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    </div>
+
+
+<script>
+    let container = document.querySelector('.container');
+        setTimeout(() =>{
+            container.style.opacity = 1
+        }, 2000);
+</script>
+</body>
+
+</html>
