@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+</head>
+<body>
+    <h2>Cadastro de Produtos</h2>
+
+    <form method="get" action="#">
+        <label for="descricao">Descrição:</label><br>
+        <input type="text" id="descricao" name="descricao"><br><br>
+
+        <label for="quantidade">Quantidade:</label><br>
+        <input type="number" id="quantidade" name="quantidade" min="0"><br><br>
+
+        <label for="valor">Valor:</label><br>
+        <input type="number" id="valor" name="valor" step="0.01" min="0"><br><br>
+
+        <label for="status">Status:</label><br>
+        <select id="status" name="status">
+            <option value="ativo">Ativo</option>
+            <option value="inativo">Inativo</option>
+            <option value="em_falta">Em falta</option>
+        </select><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    
+</body>
+</html>

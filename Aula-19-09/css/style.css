@@ -1,0 +1,28 @@
+table tbody tr td:lest-child {
+    display: flex;
+    justify-content: space-around;
+}
+
+table tbody tr td .up {
+    background-color: gold;
+    padding: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+}
+
+table tbody tr td .del {
+    background-color: red;
+    padding: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+}
+
+table tbody tr td .ver {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Meu meio de Transporte</h1>
+        <p>o meio de transporte que mais utilizo é <strong id="maisUsado">carregando...</strong>.</p>
+    </div>
+
+    <script>
+        fetch('../php/exercicio2.php')
+        .then(resposta => resposta.json())
+        .then(dado => {
+            document.getElementById('maisUsado').textContent = dado.maisUsado;
+        });
+    </script>
+</body>
+</html>

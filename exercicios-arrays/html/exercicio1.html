@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Minha cidade favorita</h1>
+        <p>Minha cidade favorita é <strong id="favorita">carregando...</strong>.</p>
+    </div>
+    
+    <script>
+        fetch('../php/exercicio1.php')
+        .then(resposta => resposta.json())
+        .then(dado => {
+            document.getElementById('favorita').textContent = dado.favorita;
+        });
+    </script>
+</body>
+</html>
